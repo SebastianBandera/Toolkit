@@ -1,0 +1,6 @@
+/.*
+!.gitignore
+/bin
+/target/
+/src/main/external-resources/logs/
+/temp/
