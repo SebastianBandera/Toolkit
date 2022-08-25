@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="1080.0" maxWidth="1920.0" minHeight="200.0" minWidth="300.0" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.MainController">
+   <children>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#test2" text="test2" />
+            <Button fx:id="test" mnemonicParsing="false" onAction="#testClick" text="testClick" />
+         </children>
+      </HBox>
+      <TableView fx:id="table" maxHeight="1080.0" maxWidth="1920.0" minHeight="157.0" minWidth="300.0" prefHeight="605.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="tblColId" minWidth="100.0" prefWidth="180.0" sortable="false" text="Id" />
+          <TableColumn fx:id="tblColDescription" minWidth="100.0" prefWidth="150.0" sortable="false" text="Description" />
+            <TableColumn fx:id="tblColComment" minWidth="100.0" prefWidth="200.0" sortable="false" text="Comment" />
+            <TableColumn fx:id="tblColAction" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" sortable="false" text="Action" />
+            <TableColumn fx:id="tblColStatus" maxWidth="300.0" minWidth="100.0" prefWidth="100.0" sortable="false" text="Status" />
+            <TableColumn fx:id="tblColAutorun" maxWidth="100.0" minWidth="50.0" prefWidth="75.0" sortable="false" text="Auto run" />
+            <TableColumn fx:id="tblColLogTail" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" sortable="false" text="Log tail" />
+            <TableColumn fx:id="tblColTimesUsed" maxWidth="500.0" minWidth="75.0" prefWidth="75.0" sortable="false" text="Times used" />
+        </columns>
+      </TableView>
+      <HBox maxHeight="19.0" maxWidth="602.0" minHeight="19.0" minWidth="602.0">
+         <children>
+            <Label text="Activity:">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="1.0" left="2.0" right="1.0" top="1.0" />
+               </padding>
+            </Label>
+            <ProgressBar fx:id="pBar" prefWidth="200.0" progress="0.0" />
+            <Label fx:id="lblGeneralStatus">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

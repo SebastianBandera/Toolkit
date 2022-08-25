@@ -1,0 +1,1 @@
+If execute maven script in powershell, can use cmd /c build
