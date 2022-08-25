@@ -2,4 +2,5 @@
 !.gitignore
 /bin
 /target/
+/toolkit-files/
 /temp/

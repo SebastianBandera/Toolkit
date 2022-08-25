@@ -2,5 +2,5 @@
 !.gitignore
 /bin
 /target/
-/src/main/external-resources/logs/
+/toolkit-files/
 /temp/
