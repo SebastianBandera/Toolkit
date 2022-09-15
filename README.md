@@ -7,7 +7,7 @@ Toolkit is an experimental system for executing add-in modules.
 Three projects are found, **ToolkitAPIInterface**, **ToolkitCore** and **ToolkitGUI**.
 
 * **ToolkitAPIInterface** takes care of defining an interface for:
-   * Identify the module¨.
+   * Identify the module.
    * Define capabilities: runnable, configurable, pauseable, stoppable.
    * Inject dependencies. PathProvider, PausableModuleHelper, ToolkitNotifier and Locker.
 
