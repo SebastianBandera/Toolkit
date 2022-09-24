@@ -7,15 +7,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="1080.0" maxWidth="1920.0" minHeight="200.0" minWidth="300.0" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.MainController">
+<VBox maxHeight="1080.0" maxWidth="1920.0" minHeight="200.0" minWidth="300.0" prefHeight="625.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.MainController">
    <children>
-      <HBox>
-         <children>
-            <Button mnemonicParsing="false" onAction="#test2" text="test2" />
-            <Button fx:id="test" mnemonicParsing="false" onAction="#testClick" text="testClick" />
-         </children>
-      </HBox>
-      <TableView fx:id="table" maxHeight="1080.0" maxWidth="1920.0" minHeight="157.0" minWidth="300.0" prefHeight="605.0" prefWidth="1000.0">
+      <TableView fx:id="table" focusTraversable="false" maxHeight="1080.0" maxWidth="1920.0" minHeight="157.0" minWidth="300.0" prefHeight="605.0" prefWidth="1000.0">
         <columns>
           <TableColumn fx:id="tblColId" minWidth="100.0" prefWidth="180.0" sortable="false" text="Id" />
           <TableColumn fx:id="tblColDescription" minWidth="100.0" prefWidth="150.0" sortable="false" text="Description" />
