@@ -20,6 +20,8 @@ public class PathProviderImpl implements PathProvider {
 		
 		this.tempDirectoryForInstallation    = new File(modulesTemp, installationName);
 		this.storageDirectoryForInstallation = new File(modulesStorage, installationName);
+		this.tempDirectoryForInstallation.mkdirs();
+		this.storageDirectoryForInstallation.mkdirs();
 	}
 
 	private String getInstallationName(String name) {
